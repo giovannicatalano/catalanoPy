@@ -22,12 +22,12 @@ for riga in f:
     Nval = len(valori)          
     valori = valori.strip('\n') 
     valori = valori.split(',')  
-valori = list(valori)      
+    valori = list(valori)       
     print(valori)
     coordX.append(int(valori[0])) 
     coordY.append(int(valori[1])) 
 
-f.close() 
+f.close()  
 
 print ("X: ",coordX)
 print ("Y: ",coordY)
@@ -39,10 +39,8 @@ print("liste ordinate:")
 print ("X: ",coordX)
 print ("Y: ",coordY)
 
-
 print(type(coordX))
 print(type(coordY))
-
 
 
 plt.scatter(coordX,coordY)
